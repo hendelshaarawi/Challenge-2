@@ -1,13 +1,15 @@
 
-TweenMax.to(".background", 3,{backgroundImage:"radial-gradient(circle at 250px 250px, #805370, #674E75, #3B4372, #2C2F5A, black)",repeat:-1, yoyo:true})
+TweenMax.to(".background", 15,{backgroundImage:"radial-gradient(circle at 250px 250px, #805370, #674E75, #3B4372, #2C2F5A, black)",repeat:-1, yoyo:true})
 
 
 window.onload = function() {
 	  function clock(){
 	    var time = new Date();
 	    var hours = time.getHours();
-	    var minutes = time.getMinutes();
-	    var seconds = time.getSeconds();
+	    // var minutes = time.getMinutes();
+	    var minutes = ('0' + (time.getMinutes()+1)).slice(-2);
+	    // var seconds = time.getSeconds();
+	 	var seconds = ('0' + (time.getSeconds()+1)).slice(-2);
 	    var day = time.getDate();
 	    var month = time.getMonth();
 	    var year = time.getFullYear();
@@ -89,12 +91,12 @@ function getRandomPos(){
 
 
 //MOON 
-TweenMax.from(".moon", 3, {opacity:0, y: 20, rotation:90,  repeat:-1, yoyo:true});
+TweenMax.from(".moon", 15, {opacity:0, y: 20, rotation:90,  repeat:-1, yoyo:true});
 
 //SHADOW
-TweenMax.to(".time, .clock", 3, {textShadow:"0 0 10px rgba(10, 175, 230, 1), 0 0 4px rgba(10, 175, 230, 0)",repeat:-1,yoyo:true});
+TweenMax.to(".time, .clock", 15, {textShadow:"0 0 10px rgba(10, 175, 230, 1), 0 0 4px rgba(10, 175, 230, 0)",repeat:-1,yoyo:true});
 
 //STAR ANIMATION
-TweenMax.staggerFrom(".stars", 3, {opacity:0, repeat:-1,yoyo:true});
+TweenMax.staggerFrom(".stars", 15, {opacity:0, repeat:-1,yoyo:true});
 
 
