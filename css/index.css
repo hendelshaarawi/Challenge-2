@@ -1,0 +1,85 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background:#333;
+	color:#FFF;
+	overflow: hidden;
+}
+.background {
+	position:relative;
+	background-image: radial-gradient(circle at 0px 0px, #F48E51, #ED8359,#875572,#664D74,#85556F);
+	width:100%;
+	height:100vh;
+}
+.clock, .time {
+	text-align: center;
+	position: relative;
+	top: 20vh;
+	font-size: 2em;
+	font-family: "Avenir";
+	margin: 0 auto;
+	color: white;
+	text-shadow: 0 0 4px black, 0 0 4px black;
+	border: 3px white solid;
+	width: 80%;
+}
+.time {
+	border-top: none;
+}
+.clock {
+	border-bottom: none;
+}
+div.stars{
+	height: 100%;
+	width: 100%;
+}
+div.stars p {
+	color: white;
+	font-size: .4em;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 10px;
+	height:10px;
+	opacity: .3;
+}
+img {
+	position: relative;
+	width: 30%;
+	opacity: 0.4;
+}
+@media screen and (min-width: 758px) {
+	.clock, .time {
+		top: 10vh;
+		font-size: 2.5em;
+		width: 70%;
+	}
+	img.moon {
+		position: relative;
+		width: 40%;
+		opacity: .6;
+	}
+}
+@media only screen and (min-width: 1024px) {
+	div .clock, .time {
+		top: -30vh;
+		border: none;
+	}
+	.clock, .time {
+		width: 70%;
+		font-size: 3em;
+	}
+}
+@media only screen and (min-width: 1244px) {
+	div .clock, .time {
+		color: white;
+		top: 2vh;
+		left: 15%
+}
+	.clock, .time {
+		width: 70%;
+		font-size: 3.5em;
+	}
+}
