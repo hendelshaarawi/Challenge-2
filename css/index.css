@@ -31,6 +31,9 @@ body {
 .clock {
 	border-bottom: none;
 }
+
+
+
 div.stars{
 	height: 100%;
 	width: 100%;
@@ -43,13 +46,14 @@ div.stars p {
 	left: 0;
 	width: 10px;
 	height:10px;
-	opacity: .3;
+	opacity: 0;
 }
 img {
 	position: relative;
 	width: 30%;
-	opacity: 0.4;
+	opacity: 0;
 }
+
 @media screen and (min-width: 758px) {
 	.clock, .time {
 		top: 10vh;
@@ -59,7 +63,7 @@ img {
 	img.moon {
 		position: relative;
 		width: 40%;
-		opacity: .6;
+		opacity: 0;
 	}
 }
 @media only screen and (min-width: 1024px) {
